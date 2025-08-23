@@ -1,6 +1,6 @@
 
 
-// export default AllRatingUser;
+
 
 import React, { useState, useEffect } from "react";
 import { allRatingData } from '../service/service.js';
