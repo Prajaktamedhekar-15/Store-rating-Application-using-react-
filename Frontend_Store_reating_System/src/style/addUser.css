@@ -1,0 +1,74 @@
+/* AddUser.css */
+.adduser-container {
+background-color: rgb(241, 250, 238);
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.adduser-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.adduser-box {
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  animation: fadeInUp 0.8s ease;
+}
+
+.adduser-box h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.adduser-box .form-label {
+  font-weight: 500;
+  color: #444;
+}
+
+.adduser-box .form-control {
+  border-radius: 30px;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.adduser-box .form-control:focus {
+  border-color: #333;
+  box-shadow: 0 0 8px rgba(51, 51, 51, 0.3);
+}
+
+.adduser-box .btn-dark {
+  border-radius: 30px;
+  font-weight: 500;
+  padding: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.adduser-box .btn-dark:hover {
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

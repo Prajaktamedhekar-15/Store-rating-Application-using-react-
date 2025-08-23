@@ -1,0 +1,82 @@
+.admin-sidebar {
+  background: rgba(112, 110, 110, 0.9);
+  min-height: 100vh;
+  width: 100%;
+  border-radius: 20px;
+  overflow-y: auto;
+  border-right: 1px solid rgba(244, 237, 237, 0.1);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.admin-logo{
+  color: #ffc107;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.accordion-button {
+  background-color: #2b2b2b;
+  color: #fff;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  border-radius: 0 !important;
+}
+
+.accordion-button:hover {
+  background-color: #444;
+  color: #ffc107;
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+.accordion-body {
+  background-color: #333;
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.accordion-body a.btn {
+  border-radius: 8px;
+}
+
+.btn-outline-dark:hover {
+  background-color: #ffc107;
+  color: #000;
+  border-color: #ffc107;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+}
+
+/* Mobile responsive full-screen sidebar */
+@media (max-width: 768px) {
+  .admin-sidebar.d-block {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(33, 33, 33, 0.98);
+    z-index: 1050;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    border-radius: 0;
+  }
+
+  .admin-sidebar .accordion-body a {
+    font-size: 1.1rem;
+  }
+}
