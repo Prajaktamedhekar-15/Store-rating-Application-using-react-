@@ -190,19 +190,7 @@ exports.updatePass = (req, res) => {
 // console.log(oldPassword+" "+newPassword+" "+confirmPassword);
 
   model.updatePass(id,newPassword)
-    // .then(user => {
-    //   if (!user) {
-    //     res.status(404).send("User not found");
-    //     return null;  // 🔑 stop chain
-    //   }
-
-    // //  if (user.newPassword.trim() !== req.body.oldPassword.trim()){
-    // //     res.status(400).send("Old password is incorrect");
-    // //     return null;  // 🔑 stop chain
-    // //   }
-
-    //   return model.updatePass(id, newPassword);
-    // })
+   
     .then(result => {
       if (result) {   // only runs if updatePass actually executed
         res.send("Password updated successfully");
